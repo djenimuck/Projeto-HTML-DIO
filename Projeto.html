@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML na prática</title>
+    <meta name="description" content="Projeto de HTML prático">
+</head>
+<body>
+    <h1><strong>Introdução ao HTML:</strong></h1>
+    <h2><strong>Entendendo a internet e os usos básicos do HTML para a criação de páginas</strong></h2>
+    <hr>
+    <h3><strong>Índice</strong></h3>
+    <ul>
+        <li><a href="#HistoriaNet">História da Internet</a></li>
+        <li><a href="#ClientServer">Clients x Servers</a></li>
+        <li><a href="#Linguagens">Linguagens de Programação</a></li>
+        <li><a href="#Estrutura">Estrutura Básica de HTML</a></li>
+        <li><a href="#listas">Listas Ordenadas E Não-Ordenadas</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+    <h3 id="HistoriaNet"><strong>História da Internet</strong></h3>
+    <p>Para começar a falar da história da internet, precisa-se entender de onde surgiram os computadores.</p>
+    <h4><strong>Primeira Geração</strong></h4>
+    <p>Os primeiros computadores surgiram como uma tentativa de ajudar o processo de cálculos aritméticos como soma e subtração, mas como avanço de grandes guerras, essas tecnologias se tornaram grandes aliadas. Temos como exemplo:
+        <ul>
+            <li>Harvard Mark I (1944)</li>
+            <li>Colossus (1946)</li>
+            <li>ENIAC (1946)</li>
+        </ul>
+    </p>
+    <h4><strong>Segunda Geração (1959-1965)</strong></h4>
+    <p>Essa geração foi marcada pela invenção dos transistores.</p>
+    <h4><strong>Terceira Geração (1965-1970)</strong></h4>
+    <p>Nessa geração, começaram a uilizar o circuito integrado, que é constituído de transistores, capacitores e resistores.</p>
+    <h4><strong>Quarta Geração (1971-Atualmente)</strong></h4>
+    <p>Marcada pelo surgimento de computadores para uso pessoal (PCs).</p>
+    <h4>A Internet</h4>
+    <p>Com os avanços da Guerra Fria, na década de 60, tornou-se imprescindível a criação de uma rede de comunicação robusta e descentralizada. Em 1969, a ARPA (agora DARPA) lançou a ARPANET (Advanced Research Projects Agency Network).</p>
+    <p>Durante os anos de 1970-1980, Vinton Cerf e Robert Kahn trabalharam no desenvolvimento dos protocolos de comunicação (ICP/IP). Isso foi essencial para a padronização da comunicação entre diferentes redes de computadores.</p>
+    <p>Após isso, em 1989, Tim Barners-Lee criou o que conhecemos por Worldwide Web (WWW), moldando assim o a internet que conhecemos hoje em dia e utilizamos em nossos computadores, celulares e demais dispositivos.</p>
+    <h3 id="ClientServer"><strong>Clients x Servers</strong></h3>
+    <h4><strong>Client</strong></h4>
+    <p>Client, ou cliente em português, é o dispositívo que está consumindo a informação disponibilizada na internet. Os clientes fazem solicitações, utilizando a internet, para os servidores e esperam por uma resposta. Exemplos de clients são: computadores, smartphones e tablets.</p>
+    <h4><strong>Server</strong></h4>
+    <p>Server, ou servidor, pode ser definido como o local onde o site está hospedado. Ele interpreta as solicitações feitas pelo cliente e as respondem. Exemplos de servers são:
+        <ul>
+            <li>Arquivos</li>
+            <li>Segurança (Firewall)</li>
+            <li>Streaming</li>
+            <li>E-mail</li>
+            <li>Web</li>
+        </ul>
+    </p>
+    <h3 id="Linguagens"><strong>Linguagens de Programação</strong></h3>
+    <p>Com a evolução das tecnologias, foi necessario melhorar a comunicação entre humano e máquina, levando em consideração que os computadores processam as informações em código binário. A partir daí foram criadas linguagens server-side (backend) e linguagens client-side (frontrnd).</p>
+    <p><i><strong>HTML (Hypertex Markup Language)</strong></i>, <mark>não</mark> é uma linguagem de programação, apesar de possuir a palavra <i>"linguagem"</i> em seu nome.</p>
+    <h3 id="Estrutura"><strong>Estrutura Básica do HTML</strong></h3>
+    <h4><strong>Head e Body</strong></h4>
+    <P>O código HTML é dividído em duas partes: cabeçalho e corpo.</P>
+    <h5>Head</h5>
+    <p>Representa o cabeçalho de uma página web e contém informaçôes básicas dela, incluíndo o título.</p>
+    <code>&lt;head&gt;&lt;/head&gt;</code>
+    <h5><strong>Body</strong></h5>
+    <p>É o corpo do nosso código. Todo o conteúdo exibido no website, fica dentro dele.</p>
+    <code>&lt;body&gt;&lt;/body&gt;</code>
+    <h5><strong>Textos</strong></h5>
+    <p>Existem diversas tags que podem ser utilizadas para estilizar os textos que serão exibidos em sua página da web. Veja alguns exemplos, a seguir:</p>
+    <ul>
+        <li><code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; e &lt;h6&gt;</code>:</li>
+        <p>Utilizados para títulos e subtítulos. Exemplos (do h1 ao h6, repectivamente):</p>
+        <h1>A</h1>
+        <h2>A</h2>
+        <h3>A</h3>
+        <h4>A</h4>
+        <h5>A</h5>
+        <h6>A</h6>
+        <li><code>&lt;p&gt;</code>:</li>
+        <p>Parágrafo normal, igual ao que você está lendo nesse momento.</p>  
+        <li><code>&lt;blockquote&gt;</code>; <blockquote>"É uma citação."</blockquote></li>
+        <li><code>&lt;strong&gt;</code>: <strong>Negrito</strong></li>
+        <li><code>&lt;i&gt;</code>: <i>Itálico</i></li>
+        <li><code>&lt;u&gt;</code>: <u>Sublinhar</u></li>
+        <li><code>&lt;mark&gt;</code>: <mark>Marca texto</mark></li>
+        <li><code>&lt;sup&gt;</code>:</li>
+        <p>É utilizado para adicionar símbolos ou números em cima. Por exemplo: Playstation<sup>&reg;</sup></p>
+        <li><code>&lt;font&gt;</code>:</li>
+        <p>Utilizado para alterar as propriedades do texto, como cor e tamanho. No entanto, seu uso foi descontinuado no HTML:5, por conta do CSS ser preferencial. Exemplo: <font color="red">Palavra</font></p>
+        <li><code>&lt;del&gt;</code>: <del>Texto deletado</del></li>
+        <li><code>&lt;small&gt;</code>:</li>
+        <p>Utilizada para diminuir o tamanho do texto. Exemplo: <small>Texto pequeno</small></p>
+        <li><code>&lt;abbr&gt;</code>:</li>
+        <p>É utilizado para acrônimos e abreviações. Por exemplo:</p>
+        <p>HTML é uma <abbr title="Hypertext Markup Language">linguagem de marcação de hipertexto</abbr> usada na criação de páginas web.</p>
+    </ul>
+    <h3 id="listas"><strong>Listas Ordenadas e Nâo-Ordenadas</strong></h3>
+    <p>Utilizadas para fins de organização, as listas armazenam links, palavras, númers, símbolos e demais informações. Elas são divididas em: ordenadas e não-ordenadas.</p>
+    <p>Um exemplo de lista ordenada é:</p>
+    <ol>
+        <li><a href="Link1.html">Link 1</a></li>
+        <li><a href="Link2.html">Link 2</a></li>
+        <li><a href="Link3.html">Link 3</a></li>
+    </ol>
+    <p>Um exemplo de linha não-ordenada é:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <h3 id="referencias"><strong>Referências:</strong></h3>
+    <ul>
+        <li><a href="https://web.dio.me/" target="_blank">https://web.dio.me/</a></li>
+        <li><a href="https://www.w3schools.com/Css/" target="_blank">https://www.w3schools.com/Css/</a></li>
+        <li><a href="https://www.youtube.com/watch?v=fQ6h7PDCk1A&ab_channel=DevTechTipsBrasil" target="_blank">https://www.youtube.com/watch?v=fQ6h7PDCk1A&ab_channel=DevTechTipsBrasil</a></li>
+        <li><a href="https://www.youtube.com/watch?v=3oSIqIqzN3M&ab_channel=RafaellaBallerini" target="_blank">https://www.youtube.com/watch?v=3oSIqIqzN3M&ab_channel=RafaellaBallerini</a></li>
+    </ul>
+</body>
+</html> 
